@@ -25,6 +25,7 @@
                 margin-top: 100px;
                 width: 700px;
                 align-self: center;
+                cursor: pointer;
             }
 
                 #infoDiv .info > span
@@ -66,6 +67,7 @@
 
         #overlay
         {
+            display: none; /* flex to show */
             background-color: rgba(0, 0, 0, 0.75);
             position: fixed;
             width: 100%;
@@ -73,7 +75,6 @@
             left: 0px;
             top: 0px;
             z-index: 20;
-            display: flex;
             justify-content: center;
         }
 
@@ -149,6 +150,17 @@
             background-color: #333F50;
         }
     </style>
+    <script>
+        function showOverlay()
+        {
+            overlay.style.display = "flex";
+        }
+
+        function hideOverlay()
+        {
+            overlay.style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <div id="page">
@@ -183,7 +195,7 @@
         </div>
         <div id="content">
             <div id="infoDiv">
-                <div class="info">
+                <div class="info" onclick="showOverlay();">
                     <span>
                         <img src="img/list1.jpg" />
                     </span>
@@ -202,7 +214,7 @@
                         <p>San Francisco, CA 94110</p>
                     </div>
                 </div>
-                <div class="info">
+                <div class="info" onclick="showOverlay();">
                     <img src="img/list2.jpg" />
                     <div>
                         <span>
@@ -221,7 +233,7 @@
                         <p>San Francisco, CA 94110</p>
                     </div>
                 </div>
-                <div class="info">
+                <div class="info" onclick="showOverlay();">
                     <span>
                         <img src="img/list3.jpg" />
                     </span>
@@ -240,7 +252,7 @@
                         <p>San Francisco, CA 94110</p>
                     </div>
                 </div>
-                <div class="info">
+                <div class="info" onclick="showOverlay();">
                     <span>
                         <img src="img/list4.jpg" />
                     </span>
@@ -270,7 +282,7 @@
                 <h2>2 Bedrooms</h2>
                 <h3>This home costs <span class="green">$1,300.00</span> every month</h3>
                 <h3>You would pay <span class="green">$390.00</span> every month</h3>
-                <div><span>Close</span><a href="">Apply</a></div>
+                <div><span onclick="hideOverlay();">Close</span><a href="">Apply</a></div>
             </div>
         </div>
     </div>
