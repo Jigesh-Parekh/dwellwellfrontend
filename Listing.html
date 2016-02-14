@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
-
     <title>DwellWell</title>
-
     <link rel="stylesheet" href="css/Reset.css" />
     <link rel="stylesheet" href="css/Header.css" />
     <style>
@@ -15,82 +13,7 @@
             padding: 0px 100px;
         }
 
-        #profileDiv
-        {
-        }
-
-            #profileDiv h1
-            {
-                font-size: 24pt;
-                margin: 100px 0px;
-            }
-
-            #profileDiv #dashDiv
-            {
-            }
-
-            #profileDiv #youPay
-            {
-                display: inline-block;
-                margin-bottom: 5px;
-                text-align: center;
-                width: 172.5px;
-            }
-
-            #profileDiv #barDiv
-            {
-                margin-bottom: 50px;
-                display: flex;
-                text-align: center;
-                display: flex;
-            }
-
-                #profileDiv #barDiv .bar
-                {
-                    display: inline-block;
-                    line-height: 50px;
-                    font-size: 18pt;
-                }
-
-                #profileDiv #barDiv #barYou
-                {
-                    background-color: #70AD47;
-                    color: #FFFFFF;
-                    border: 1px solid #70AD47;
-                    width: 172.5px;
-                }
-
-                #profileDiv #barDiv #barTotal
-                {
-                    background-color: #E2F0D9;
-                    color: #70AD47;
-                    border: 1px solid #70AD47;
-                    margin-left: -1px;
-                    width: 402.5px;
-                }
-
-                #profileDiv #barDiv #barMax
-                {
-                    background-color: #FFFFFF;
-                    color: #333F50;
-                    border: 1px solid #70AD47;
-                    margin-left: -1px;
-                    width: 125px;
-                }
-
-            #profileDiv #dashDiv p
-            {
-                line-height: 48pt;
-                font-size: 16pt;
-            }
-
-            #profileDiv #dashDiv .green
-            {
-                color: #70AD47;
-                font-size: 28pt;
-            }
-
-           #infoDiv
+        #infoDiv
         {
             display: flex;
             flex-direction: column;
@@ -100,39 +23,132 @@
             {
                 display: flex;
                 margin-top: 100px;
+                width: 700px;
+                align-self: center;
             }
+
+                #infoDiv .info > span
+                {
+                    width: 250px;
+                    text-align: center;
+                }
 
                 #infoDiv .info img
                 {
                     max-width: 240px;
                     max-height: 180px;
+                    border: 1px solid #333F50;
                 }
 
                 #infoDiv .info div
                 {
-                    flex: 1 1 75%;
-                    padding-left: 100px;
+                    flex: 1 1 auto;
+                    padding-left: 50px;
                 }
 
                 #infoDiv .info h3
                 {
+                    font-size: 24pt;
+                    margin: 10px 0px 5px 0px;
+                    color: #219AFF;
+                }
+
+                #infoDiv .info h4
+                {
                     font-size: 14pt;
                     margin-bottom: 20px;
                 }
-                #infoDiv .info h4
-                {
-                    font-size: 24pt;
-                    margin-bottom: 0px;
-                    color: #219AFF;
-                }
+
                 #infoDiv .info p
                 {
                     line-height: 18pt;
                 }
 
-             
-    </style>
+        #overlay
+        {
+            background-color: rgba(0, 0, 0, 0.75);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: 20;
+            display: flex;
+            justify-content: center;
+        }
 
+        #overlay #propertyDiv
+        {
+            background-color: #FFFFFF;
+            padding: 15px;
+            align-self: center;
+            width: 500px;
+            height: 600px;
+        }
+
+        #overlay #propertyDiv img
+        {
+            width: 100%;
+        }
+
+        #overlay #propertyDiv h1
+        {
+            font-size: 24pt;
+            margin-bottom: 15px;
+        }
+
+        #overlay #propertyDiv h2
+        {
+            margin: 15px 0px;
+        }
+
+        #overlay #propertyDiv h3
+        {
+            margin-bottom: 15px;
+            font-size: 16pt;
+        }
+
+        #overlay #propertyDiv .green
+        {
+            color: #70AD47;
+        }
+
+        #overlay #propertyDiv div
+        {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #overlay #propertyDiv div span
+        {
+            align-self: center;
+            margin-right: 15px;
+            text-transform: uppercase;
+            color: #219AFF;
+        }
+        
+        #overlay #propertyDiv div span:hover
+        {
+            color: #333F50;
+            cursor: pointer;
+        }
+
+        #overlay #propertyDiv div a
+        {
+            display: inline-block;
+            background-color: #219AFF;
+            color: #FFFFFF;
+            width: 100px;
+            line-height: 40px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #overlay #propertyDiv div a:hover
+        {
+            background-color: #333F50;
+        }
+    </style>
 </head>
 <body>
     <div id="page">
@@ -144,98 +160,121 @@
                 <span id="username">Login</span>
             </div>
         </div>
-
-         <div id="header" style = "background-color: #333F50">
+        <div id="header" style="background-color: #333F50">
             <div id="userDiv1">
-            <select>
-                  <option value="1bed">1</option>
-                  <option value="2bed">2</option>
-                  <option value="3bed">3</option>
-                  <option value="4bed">4</option>
-            </select>
+                <select>
+                    <option value="1bed">1</option>
+                    <option value="2bed">2</option>
+                    <option value="3bed">3</option>
+                    <option value="4bed">4</option>
+                </select>
             </div>
-            <span class="headerLink1" href="" style = "margin-left: 3px"> Bedrooms</span>
-            <span class="headerLink1" href=""><input type="checkbox" name="#" value="TRUE" checked = "true"> Only homes I qualify for</span>
+            <span class="headerLink1" href="" style="margin-left: 3px"> Bedrooms</span>
+            <span class="headerLink1" href=""><input type="checkbox" name="#" value="TRUE" checked="true"> Only homes I qualify for</span>
             <div id="userDiv">
                 <span id="username">Sort by</span>
                 <select>
-                  <option value="PriceLoHi">Price: Low to High</option>
-                  <option value="PriceHiLo">Price: High to Low</option>
-                  <option value="Newest">Newest</option>
-                  <option value="Nearest">Nearest</option>
-            </select>
+                    <option value="PriceLoHi">Price: Low to High</option>
+                    <option value="PriceHiLo">Price: High to Low</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Nearest">Nearest</option>
+                </select>
             </div>
         </div>
-
         <div id="content">
             <div id="infoDiv">
                 <div class="info">
-                    <img src="img/list1.jpg" />
+                    <span>
+                        <img src="img/list1.jpg" />
+                    </span>
                     <div>
-                        <h4>Park Place</h4>
-                        <h3><span style="font-size:24px; color: #70AD47"> 
-                            $405.00
+                        <h3>Park Place</h3>
+                        <h4>
+                            <span style="font-size:24px; color: #70AD47">
+                                $405.00
                             </span>
-                             of 
-                            <span style="color: #70AD47"> 
-                            $1350.00
-                            </span>for 2 bedrooms</h3>
-                        <p> 2932 Street St. </p>
-                        <p> San Francisco, CA 94110</p>
+                            of
+                            <span style="color: #70AD47">
+                                $1350.00
+                            </span>for 2 bedrooms
+                        </h4>
+                        <p>2932 Street St.</p>
+                        <p>San Francisco, CA 94110</p>
                     </div>
                 </div>
                 <div class="info">
                     <img src="img/list2.jpg" />
                     <div>
-                        <h4>Marvin Gardens</h4>
-                        <h3><span style="font-size:24px; color: #70AD47"> 
-                            $405.00
+                        <span>
+                            <h3>Marvin Gardens</h3>
+                        </span>
+                        <h4>
+                            <span style="font-size:24px; color: #70AD47">
+                                $405.00
                             </span>
-                             of 
-                            <span style="color: #70AD47"> 
-                            $1350.00
-                            </span>for 2 bedrooms</h3>
-                        <p> 4324 Ranch Rd. </p>
-                        <p> San Francisco, CA 94110</p>
+                            of
+                            <span style="color: #70AD47">
+                                $1350.00
+                            </span>for 2 bedrooms
+                        </h4>
+                        <p>4324 Ranch Rd.</p>
+                        <p>San Francisco, CA 94110</p>
                     </div>
                 </div>
                 <div class="info">
-                    <img src="img/list3.jpg" />
+                    <span>
+                        <img src="img/list3.jpg" />
+                    </span>
                     <div>
-                       <h4>St. James Place</h4>
-                        <h3><span style="font-size:24px; color: #70AD47"> 
-                            $405.00
+                        <h3>St. James Place</h3>
+                        <h4>
+                            <span style="font-size:24px; color: #70AD47">
+                                $405.00
                             </span>
-                             of 
-                            <span style="color: #70AD47"> 
-                            $1350.00
-                            </span>for 2 bedrooms</h3>
-                        <p> 117 James St. </p>
-                        <p> San Francisco, CA 94110</p>
+                            of
+                            <span style="color: #70AD47">
+                                $1350.00
+                            </span>for 2 bedrooms
+                        </h4>
+                        <p>117 James St. </p>
+                        <p>San Francisco, CA 94110</p>
                     </div>
                 </div>
                 <div class="info">
-                    <img src="img/list4.jpg" />
+                    <span>
+                        <img src="img/list4.jpg" />
+                    </span>
                     <div>
-                        <h4>Connecticut Ave.</h4>
-                        <h3><span style="font-size:24px; color: #70AD47"> 
-                            $405.00
+                        <h3>Connecticut Ave.</h3>
+                        <h4>
+                            <span style="font-size:24px; color: #70AD47">
+                                $405.00
                             </span>
-                             of 
-                            <span style="color: #70AD47"> 
-                            $1350.00
-                            </span>for 2 bedrooms</h3>
-                        <p> 2120 Ranchero Rd. </p>
-                        <p> San Francisco, CA 94110</p>
+                            of
+                            <span style="color: #70AD47">
+                                $1350.00
+                            </span>for 2 bedrooms
+                        </h4>
+                        <p>2120 Ranchero Rd.</p>
+                        <p>San Francisco, CA 94110</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="overlay">
+            <div id="propertyDiv">
+                <img src="img/list2.jpg" />
+                <h1>Marvin Gardens</h1>
+                <p>4324 Ranch Rd.</p>
+                <p>San Francisco, CA 94110</p>
+                <h2>2 Bedrooms</h2>
+                <h3>This home costs <span class="green">$1,300.00</span> every month</h3>
+                <h3>You would pay <span class="green">$390.00</span> every month</h3>
+                <div><span>Close</span><a href="">Apply</a></div>
+            </div>
+        </div>
     </div>
-
     <div id="footer">
-
-    </div>
     </div>
 </body>
 </html>
