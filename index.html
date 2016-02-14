@@ -8,75 +8,8 @@
     <title>DwellWell</title>
 
     <link rel="stylesheet" href="css/Reset.css" />
+    <link rel="stylesheet" href="css/Header.css" />
     <style>
-        body
-        {
-            color: #333F50;
-            font-family: Arial;
-        }
-
-        a
-        {
-            text-decoration: none;
-            color: #219AFF;
-        }
-
-        a:hover
-        {
-            color: #333F50;
-        }
-
-        #header
-        {
-            background-color: #219AFF;
-            height: 50px;
-            display: flex;
-            align-content: center;
-        }
-
-            #header #logo
-            {
-                align-self: center;
-            }
-
-                #header #logo img
-                {
-                    height: 40px;
-                }
-
-            #header .headerLink
-            {
-                align-self: center;
-                text-decoration: none;
-                color: #FFFFFF;
-                margin-left: 20px;
-            }
-
-                #header .headerLink:hover
-                {
-                    color: #333F50;
-                }
-
-            #header #userDiv
-            {
-                flex: 1 1 auto;
-                align-self: center;
-                text-align: right;
-                margin-right: 10px;
-                color: #FFFFFF;
-            }
-
-                #header #userDiv span:hover
-                {
-                    color: #333F50;
-                    cursor: pointer;
-                }
-
-        #footer
-        {
-            height: 150px;
-        }
-
         #mainDiv
         {
             background-image: url("img/San-Francisco1.jpg");
@@ -190,7 +123,7 @@
             <a class="headerLink" href="">Apply for an HCV</a>
             <a class="headerLink" href="">View Available Homes</a>
             <div id="userDiv">
-                <span>Login</span>
+                <span id="username">Login</span>
             </div>
         </div>
 
@@ -209,7 +142,7 @@
                     <img src="img/hl.png" />
                     <div>
                         <h3>What's a housing choice voucher?</h3>
-                        <p>The housing choice voucher program is a federal program for providing finanicial assistance to low-income families, the elderly, and the disabled to afford safe, sanitary, and decent homes. You can find out more <a href="http://portal.hud.gov/hudportal/HUD?src=/program_offices/public_indian_housing/programs/hcv/about/fact_sheet">here</a>.</p>
+                        <p>The housing choice voucher program is a federal program for providing financial assistance to low-income families, the elderly, and the disabled to afford safe, sanitary, and decent homes. You can find out more <a href="http://portal.hud.gov/hudportal/HUD?src=/program_offices/public_indian_housing/programs/hcv/about/fact_sheet" target="_blank">here</a>.</p>
                     </div>
                 </div>
                 <div class="info">
