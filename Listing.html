@@ -13,6 +13,31 @@
             padding: 0px 100px;
         }
 
+        #header .headerLink1
+        {
+            align-self: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            margin-left: 30px;
+            letter-spacing: 1px;
+        }
+
+        #header #userDiv1
+        {
+            align-self: center;
+            text-align: left;
+            margin-left: 15px;
+            color: #FFFFFF;
+            transition: color 0.35s;
+        }
+
+            #header #userDiv1 #username:hover
+            {
+                color: #333F50;
+                cursor: pointer;
+                transition: color 0.35s;
+            }
+
         #infoDiv
         {
             display: flex;
@@ -22,11 +47,19 @@
             #infoDiv .info
             {
                 display: flex;
-                margin-top: 100px;
+                margin-top: 50px;
                 width: 700px;
                 align-self: center;
-                cursor: pointer;
+                padding: 20px;
+                transition: background-color 0.35s;
             }
+
+                #infoDiv .info:hover
+                {
+                    background-color: #E0F1FF;
+                    cursor: pointer;
+                    transition: background-color 0.35s;
+                }
 
                 #infoDiv .info > span
                 {
@@ -78,77 +111,77 @@
             justify-content: center;
         }
 
-        #overlay #propertyDiv
-        {
-            background-color: #FFFFFF;
-            padding: 15px;
-            align-self: center;
-            width: 500px;
-            height: 600px;
-        }
+            #overlay #propertyDiv
+            {
+                background-color: #FFFFFF;
+                padding: 15px;
+                align-self: center;
+                width: 500px;
+                height: 600px;
+            }
 
-        #overlay #propertyDiv img
-        {
-            width: 100%;
-        }
+                #overlay #propertyDiv img
+                {
+                    width: 100%;
+                }
 
-        #overlay #propertyDiv h1
-        {
-            font-size: 24pt;
-            margin-bottom: 15px;
-        }
+                #overlay #propertyDiv h1
+                {
+                    font-size: 24pt;
+                    margin-bottom: 15px;
+                }
 
-        #overlay #propertyDiv h2
-        {
-            margin: 15px 0px;
-        }
+                #overlay #propertyDiv h2
+                {
+                    margin: 15px 0px;
+                }
 
-        #overlay #propertyDiv h3
-        {
-            margin-bottom: 15px;
-            font-size: 16pt;
-        }
+                #overlay #propertyDiv h3
+                {
+                    margin-bottom: 15px;
+                    font-size: 16pt;
+                }
 
-        #overlay #propertyDiv .green
-        {
-            color: #70AD47;
-        }
+                #overlay #propertyDiv .green
+                {
+                    color: #70AD47;
+                }
 
-        #overlay #propertyDiv div
-        {
-            display: flex;
-            justify-content: flex-end;
-        }
+                #overlay #propertyDiv div
+                {
+                    display: flex;
+                    justify-content: flex-end;
+                }
 
-        #overlay #propertyDiv div span
-        {
-            align-self: center;
-            margin-right: 15px;
-            text-transform: uppercase;
-            color: #219AFF;
-        }
-        
-        #overlay #propertyDiv div span:hover
-        {
-            color: #333F50;
-            cursor: pointer;
-        }
+                    #overlay #propertyDiv div span
+                    {
+                        align-self: center;
+                        margin-right: 15px;
+                        text-transform: uppercase;
+                        color: #219AFF;
+                    }
 
-        #overlay #propertyDiv div a
-        {
-            display: inline-block;
-            background-color: #219AFF;
-            color: #FFFFFF;
-            width: 100px;
-            line-height: 40px;
-            text-transform: uppercase;
-            text-align: center;
-        }
+                        #overlay #propertyDiv div span:hover
+                        {
+                            color: #333F50;
+                            cursor: pointer;
+                        }
 
-        #overlay #propertyDiv div a:hover
-        {
-            background-color: #333F50;
-        }
+                    #overlay #propertyDiv div a
+                    {
+                        display: inline-block;
+                        background-color: #219AFF;
+                        color: #FFFFFF;
+                        width: 100px;
+                        line-height: 40px;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                        #overlay #propertyDiv div a:hover
+                        {
+                            background-color: #333F50;
+                        }
     </style>
     <script>
         function showOverlay()
