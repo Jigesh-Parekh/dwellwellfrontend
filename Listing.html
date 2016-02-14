@@ -1,0 +1,241 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>DwellWell</title>
+
+    <link rel="stylesheet" href="css/Reset.css" />
+    <link rel="stylesheet" href="css/Header.css" />
+    <style>
+        #content
+        {
+            padding: 0px 100px;
+        }
+
+        #profileDiv
+        {
+        }
+
+            #profileDiv h1
+            {
+                font-size: 24pt;
+                margin: 100px 0px;
+            }
+
+            #profileDiv #dashDiv
+            {
+            }
+
+            #profileDiv #youPay
+            {
+                display: inline-block;
+                margin-bottom: 5px;
+                text-align: center;
+                width: 172.5px;
+            }
+
+            #profileDiv #barDiv
+            {
+                margin-bottom: 50px;
+                display: flex;
+                text-align: center;
+                display: flex;
+            }
+
+                #profileDiv #barDiv .bar
+                {
+                    display: inline-block;
+                    line-height: 50px;
+                    font-size: 18pt;
+                }
+
+                #profileDiv #barDiv #barYou
+                {
+                    background-color: #70AD47;
+                    color: #FFFFFF;
+                    border: 1px solid #70AD47;
+                    width: 172.5px;
+                }
+
+                #profileDiv #barDiv #barTotal
+                {
+                    background-color: #E2F0D9;
+                    color: #70AD47;
+                    border: 1px solid #70AD47;
+                    margin-left: -1px;
+                    width: 402.5px;
+                }
+
+                #profileDiv #barDiv #barMax
+                {
+                    background-color: #FFFFFF;
+                    color: #333F50;
+                    border: 1px solid #70AD47;
+                    margin-left: -1px;
+                    width: 125px;
+                }
+
+            #profileDiv #dashDiv p
+            {
+                line-height: 48pt;
+                font-size: 16pt;
+            }
+
+            #profileDiv #dashDiv .green
+            {
+                color: #70AD47;
+                font-size: 28pt;
+            }
+
+           #infoDiv
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+            #infoDiv .info
+            {
+                display: flex;
+                margin-top: 100px;
+            }
+
+                #infoDiv .info img
+                {
+                    max-width: 240px;
+                    max-height: 180px;
+                }
+
+                #infoDiv .info div
+                {
+                    flex: 1 1 75%;
+                    padding-left: 100px;
+                }
+
+                #infoDiv .info h3
+                {
+                    font-size: 14pt;
+                    margin-bottom: 20px;
+                }
+                #infoDiv .info h4
+                {
+                    font-size: 24pt;
+                    margin-bottom: 0px;
+                    color: #219AFF;
+                }
+                #infoDiv .info p
+                {
+                    line-height: 18pt;
+                }
+
+             
+    </style>
+
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <a id="logo" href="index.html"><img src="img/dwl.png" /></a>
+            <a class="headerLink" href="">Apply for an HCV</a>
+            <a class="headerLink" href="">View Available Homes</a>
+            <div id="userDiv">
+                <span id="username">Login</span>
+            </div>
+        </div>
+
+         <div id="header" style = "background-color: #333F50">
+            <div id="userDiv1">
+            <select>
+                  <option value="1bed">1</option>
+                  <option value="2bed">2</option>
+                  <option value="3bed">3</option>
+                  <option value="4bed">4</option>
+            </select>
+            </div>
+            <span class="headerLink1" href="" style = "margin-left: 3px"> Bedrooms</span>
+            <span class="headerLink1" href=""><input type="checkbox" name="#" value="TRUE" checked = "true"> Only homes I qualify for</span>
+            <div id="userDiv">
+                <span id="username">Sort by</span>
+                <select>
+                  <option value="PriceLoHi">Price: Low to High</option>
+                  <option value="PriceHiLo">Price: High to Low</option>
+                  <option value="Newest">Newest</option>
+                  <option value="Nearest">Nearest</option>
+            </select>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="infoDiv">
+                <div class="info">
+                    <img src="img/list1.jpg" />
+                    <div>
+                        <h4>Park Place</h4>
+                        <h3><span style="font-size:24px; color: #70AD47"> 
+                            $405.00
+                            </span>
+                             of 
+                            <span style="color: #70AD47"> 
+                            $1350.00
+                            </span>for 2 bedrooms</h3>
+                        <p> 2932 Street St. </p>
+                        <p> San Francisco, CA 94110</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/list2.jpg" />
+                    <div>
+                        <h4>Marvin Gardens</h4>
+                        <h3><span style="font-size:24px; color: #70AD47"> 
+                            $405.00
+                            </span>
+                             of 
+                            <span style="color: #70AD47"> 
+                            $1350.00
+                            </span>for 2 bedrooms</h3>
+                        <p> 4324 Ranch Rd. </p>
+                        <p> San Francisco, CA 94110</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/list3.jpg" />
+                    <div>
+                       <h4>St. James Place</h4>
+                        <h3><span style="font-size:24px; color: #70AD47"> 
+                            $405.00
+                            </span>
+                             of 
+                            <span style="color: #70AD47"> 
+                            $1350.00
+                            </span>for 2 bedrooms</h3>
+                        <p> 117 James St. </p>
+                        <p> San Francisco, CA 94110</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/list4.jpg" />
+                    <div>
+                        <h4>Connecticut Ave.</h4>
+                        <h3><span style="font-size:24px; color: #70AD47"> 
+                            $405.00
+                            </span>
+                             of 
+                            <span style="color: #70AD47"> 
+                            $1350.00
+                            </span>for 2 bedrooms</h3>
+                        <p> 2120 Ranchero Rd. </p>
+                        <p> San Francisco, CA 94110</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+    </div>
+</body>
+</html>
